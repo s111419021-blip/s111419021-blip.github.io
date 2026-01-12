@@ -97,11 +97,20 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#" style="color: #fff;">作品集</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #fff;">作品集</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: var(--primary-color);">
+            <li><a class="dropdown-item" href="#work-0930" style="color: #fff;">唐詩300首</a></li>
+            <li><a class="dropdown-item" href="#work-1007" style="color: #fff;">風景照片</a></li>
+            <li><a class="dropdown-item" href="#work-1014" style="color: #fff;">名信片</a></li>
+            <li><hr class="dropdown-divider" style="border-color: rgba(255,255,255,0.3);"></li>
+            <li><a class="dropdown-item" href="#work-1108" style="color: #fff;">競賽設計實施辦法</a></li>
+            <li><a class="dropdown-item" href="#work-1021" style="color: #fff;">自我介紹網站</a></li>
+            <li><a class="dropdown-item" href="#work-1111" style="color: #fff;">網頁內嵌</a></li>
+          </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" style="color: #fff;">個人資訊</a>
+          <a class="nav-link" href="#footer" style="color: #fff;">個人資訊</a>
         </li>
       </ul>
     </div>
@@ -137,15 +146,15 @@
 <!--Content1-->
 <div style="background-color: var(--light-bg); padding: 40px 20px;">
   <div class="d-flex flex-column justify-content-center gap-4" style="align-items: center;">
-    <div class="card" style="width: 100%; max-width: 1200px;">
-      <iframe src="https://s111419021-blip.github.io/0930/" frameborder="1" width="100%" height="600" style="border: none;"></iframe>
+    <div class="card" style="width: 100%; max-width: 1200px;" id="work-0930">
+      <iframe src="https://s111419021-blip.github.io/0930/index.html" frameborder="1" width="100%" height="600" style="border: none;"></iframe>
       <div class="card-body">
         <h2>唐詩300首</h2>
         <p>學習如何產生表格</p>
-        <a href="https://s111419021-blip.github.io/0930/" class="btn btn-primary">前往</a>
+        <a href="https://s111419021-blip.github.io/0930/index.html" class="btn btn-primary">前往</a>
       </div>
     </div>
-    <div class="card" style="width: 100%; max-width: 1200px;">
+    <div class="card" style="width: 100%; max-width: 1200px;" id="work-1007">
       <iframe src="https://s111419021-blip.github.io/1007/" frameborder="1" width="100%" height="600" style="border: none;"></iframe>
       <div class="card-body">
         <h2>風景照片</h2>
@@ -153,7 +162,7 @@
         <a href="https://s111419021-blip.github.io/1007/" class="btn btn-primary">前往</a>
       </div>
     </div>
-    <div class="card" style="width: 100%; max-width: 1200px;">
+    <div class="card" style="width: 100%; max-width: 1200px;" id="work-1014">
       <iframe src="https://s111419021-blip.github.io/1014/" frameborder="1" width="100%" height="600" style="border: none;"></iframe>
       <div class="card-body">
         <h2>名信片</h2>
@@ -166,7 +175,7 @@
 <!--Content2-->
 <div style="background-color: var(--light-bg); padding: 40px 20px;">
   <div class="d-flex flex-column justify-content-center gap-4" style="align-items: center;">
-    <div class="card" style="width: 100%; max-width: 1200px;">
+    <div class="card" style="width: 100%; max-width: 1200px;" id="work-1108">
       <iframe src="https://s111419021-blip.github.io/1108/" frameborder="1" width="100%" height="600" style="border: none;"></iframe>
       <div class="card-body">
         <h2>競賽設計實施辦法</h2>
@@ -174,7 +183,7 @@
         <a href="https://s111419021-blip.github.io/1108/" class="btn btn-primary">前往</a>
       </div>
     </div>
-    <div class="card" style="width: 100%; max-width: 1200px;">
+    <div class="card" style="width: 100%; max-width: 1200px;" id="work-1021">
       <iframe src="https://s111419021-blip.github.io/1021/" frameborder="1" width="100%" height="600" style="border: none;"></iframe>
       <div class="card-body">
         <h2>自我介紹網站</h2>
@@ -182,7 +191,7 @@
         <a href="https://s111419021-blip.github.io/1021/" class="btn btn-primary">前往</a>
       </div>
     </div>
-    <div class="card" style="width: 100%; max-width: 1200px;">
+    <div class="card" style="width: 100%; max-width: 1200px;" id="work-1111">
       <iframe src="https://s111419021-blip.github.io/1111/index.html" frameborder="1" width="100%" height="600" style="border: none;"></iframe>
       <div class="card-body">
         <h2>網頁內嵌</h2>
@@ -193,7 +202,7 @@
   </div>
 </div>
 <!--Footer-->
-<footer class="site-footer" aria-label="頁腳">
+<footer class="site-footer" aria-label="頁腳" id="footer">
   <style>
     .site-footer { 
       padding: 40px 20px; 
@@ -258,7 +267,7 @@
     <div class="footer-card" role="region" aria-labelledby="school-title">
       <h3 id="school-title">就讀學校</h3>
       <p><a href="https://www.ntue.edu.tw/" target="_blank" rel="noopener">國立台北教育大學</a></p>
-      <p>數位系</p>
+      <p><a href="https://youtu.be/dQw4w9WgXcQ" target="_blank" rel="noopener">數位系</a></p>
     </div>
     <!--f2-->
     <div class="footer-card" role="region" aria-labelledby="social-title">
