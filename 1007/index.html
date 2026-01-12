@@ -2,38 +2,124 @@
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
-    <title>20250930-網站設計與設計</title>
+    <title>風景照片</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --light-bg: #f8f9fa;
+            --text-color: #2c3e50;
+        }
+        * {
+            font-family: 'Segoe UI', Arial, sans-serif !important;
+        }
+        body {
+            background-color: var(--light-bg);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+        h3 {
+            color: var(--text-color);
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        table {
+            width: 100%;
+            max-width: 1000px;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        table th {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: 600;
+        }
+        table td {
+            padding: 15px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        table img {
+            max-width: 150px;
+            height: auto;
+            border-radius: 6px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .link-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: var(--secondary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        .link-btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 <body>
-    <table border="1">
-<tr>
-    <th><h3>分類</h3></th>
-    <th><h3>縮圖</h3></th>
-    <th><h3>標題&描述</h3></th>
-    <th><h3>拍攝日期</h3></th>
-</tr>
-<tr>
-    <td rowspan="2"><h3>城市風景</h3></td>
-    <td><img src="1.png" alt="city1"></td>
-    <td><h3>這很酷!</h3></td>
-    <td><h3>20200220</h3></td>
-</tr>
-<tr>
-    <td><img src="2.png" alt="city2"></td>
-    <td><h3>這很棒!</h3></td>
-    <td><h3>20200212</h3></td>
-</tr>
-<tr>
-    <th colspan="4"><h3>海邊旅行</h3></th>
-</tr>
-<tr>
-    <th><h3>自然風景</h3></th>
-    <td><img src="3.png" alt="bay3"></td>
-    <td><h3>有趣極了?</h3></td>
-    <td><h3>20200213</h3></td>
-</tr>
-    </table>
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><th>更多資訊</th></a>
+    <div class="container">
+        <h1>風景照片</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th><h3>分類</h3></th>
+                    <th><h3>縮圖</h3></th>
+                    <th><h3>標題&描述</h3></th>
+                    <th><h3>拍攝日期</h3></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2"><h3>城市風景</h3></td>
+                    <td><img src="1.png" alt="城市風景1"></td>
+                    <td><h3>這很酷!</h3></td>
+                    <td><h3>20200220</h3></td>
+                </tr>
+                <tr>
+                    <td><img src="2.png" alt="城市風景2"></td>
+                    <td><h3>這很棒!</h3></td>
+                    <td><h3>20200212</h3></td>
+                </tr>
+                <tr>
+                    <th colspan="4"><h3>海邊旅行</h3></th>
+                </tr>
+                <tr>
+                    <td><h3>自然風景</h3></td>
+                    <td><img src="3.png" alt="自然風景"></td>
+                    <td><h3>有趣極了!</h3></td>
+                    <td><h3>20200213</h3></td>
+                </tr>
+            </tbody>
+        </table>
+        <div style="text-align: center;">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="link-btn">更多資訊</a>
+        </div>
+    </div>
 </body>
 </html>

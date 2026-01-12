@@ -5,75 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>首頁</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-bg: #f8f9fa;
+            --text-color: #2c3e50;
+        }
+        * {
+            font-family: 'Segoe UI', Arial, sans-serif !important;
+        }
         body {
-            font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
-            background: #f7f7f7;
+            background: var(--light-bg);
             margin: 0;
             padding: 0;
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
+            color: var(--text-color);
         }
         .container {
             max-width: 600px;
             background: #fff;
-            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+            border-radius: 12px;
             padding: 48px 36px;
             text-align: center;
-            border: 4px solid #ffd600;
-            position: relative;
         }
         h1 {
-            color: #0058a3;
-            font-size: 2.8em;
-            letter-spacing: 2px;
-            margin-bottom: 28px;
-            font-family: 'Montserrat', sans-serif;
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            font-weight: 700;
         }
         p {
-            color: #333;
-            font-size: 1.3em;
-            margin-bottom: 32px;
-            font-family: 'Segoe UI', Arial, sans-serif;
+            color: var(--text-color);
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            line-height: 1.6;
         }
-        .btn-ikea {
-            background: #ffd600;
-            color: #0058a3;
+        .btn-primary {
+            background: var(--secondary-color);
+            color: #fff;
             border: none;
             border-radius: 8px;
-            padding: 14px 36px;
-            font-size: 1.1em;
-            font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
-            box-shadow: 0 2px 8px #ffd60044;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            font-family: 'Segoe UI', Arial, sans-serif;
             cursor: pointer;
             transition: background 0.3s, box-shadow 0.3s;
         }
-        .btn-ikea:hover {
-            background: #ffe066;
-            box-shadow: 0 0 16px #ffd600;
+        .btn-primary:hover {
+            background: #2980b9;
+            box-shadow: 0 4px 12px rgba(52,152,219,0.4);
         }
-        .profile-ikea {
-            margin-top:40px; padding:24px; background:#f7f7f7; border-radius:12px; box-shadow:0 0 12px #ffd60044;
+        .profile {
+            margin-top: 40px;
+            padding: 24px;
+            background: var(--light-bg);
+            border-radius: 12px;
         }
-        .profile-ikea img {
-            width:120px; border-radius:50%; box-shadow:0 0 8px #ffd600; margin-bottom:16px;
+        .profile img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+            margin-bottom: 16px;
         }
-        .profile-ikea h2 {
-            color:#0058a3; font-family:'Montserrat',sans-serif; margin-bottom:8px;
-        }
-        .profile-ikea p {
-            color:#333; font-size:1.1em;
+        .profile h2 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin: 12px 0;
         }
     </style>
 </head>
 <body>
     <div class="container">
-    <h1>南北韓統一</h1>
-    <p>南北韓終於實現統一，開啟嶄新和平與繁榮的時代，兩國人民攜手共創未來。</p>
-    <button class="btn-ikea">了解統一歷程</button>
+        <h1>南北韓統一</h1>
+        <p>南北韓終於實現統一，開啟嶄新和平與繁榮的時代，兩國人民攜手共創未來。</p>
+        <button class="btn-primary">了解統一歷程</button>
     </div>
 </body>
 </html>
